@@ -1,1 +1,1 @@
-# ZinoStudio.gethub.io
+# ZinoStudio.github.io
