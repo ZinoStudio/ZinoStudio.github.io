@@ -78,48 +78,147 @@
 			</section>
 
 		<!-- Three -->
-			<section id="why-us" style="padding: 60px 20px; background: #f8f9fa; text-align: center;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <h2 style="font-size: 2.5em; margin-bottom: 40px;">Why Choose Zino Studio?</h2>
+			<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zino Studio - Professional Video Editing</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- All CSS goes here in style tags -->
+    <style>
+        /* ===== Animation Styles ===== */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
         
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-            <!-- Box 1 -->
-            <div style="flex: 1 1 300px; max-width: 350px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                <i class="fas fa-cut" style="font-size: 2.5em; color: #4CAF50; margin-bottom: 15px;"></i>
-                <h3 style="font-size: 1.5em;">Professional Editing</h3>
-                <p>Crisp cuts, smooth transitions, and flawless pacing.</p>
+        @keyframes iconPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* ===== Why Us Section Styles ===== */
+        #why-us {
+            padding: 80px 20px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+        
+        .feature-box {
+            flex: 1 1 300px;
+            max-width: 350px;
+            background: white;
+            padding: 35px 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+        
+        .feature-box i {
+            font-size: 2.8rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .feature-box:hover i {
+            animation: iconPulse 0.8s ease;
+        }
+        
+        .feature-box h3 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .feature-box p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Animation Delays */
+        .feature-box:nth-child(1) { animation-delay: 0.1s; }
+        .feature-box:nth-child(2) { animation-delay: 0.3s; }
+        .feature-box:nth-child(3) { animation-delay: 0.5s; }
+        .feature-box:nth-child(4) { animation-delay: 0.7s; }
+        .feature-box:nth-child(5) { animation-delay: 0.9s; }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .feature-box {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== Why Choose Us Section ===== -->
+    <section id="why-us">
+        <div class="features-container">
+            <h2 style="font-size: 2.5em; margin-bottom: 50px; width: 100%;">Why Choose Zino Studio?</h2>
+            
+            <!-- Feature Box 1 -->
+            <div class="feature-box">
+                <i class="fas fa-cut"></i>
+                <h3>Professional Editing</h3>
+                <p>Crisp cuts, smooth transitions, and flawless pacing for cinematic results.</p>
             </div>
             
-            <!-- Box 2 -->
-            <div style="flex: 1 1 300px; max-width: 350px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                <i class="fas fa-bolt" style="font-size: 2.5em; color: #4CAF50; margin-bottom: 15px;"></i>
-                <h3 style="font-size: 1.5em;">Fast Turnaround</h3>
-                <p>Quick delivery without quality compromises.</p>
+            <!-- Feature Box 2 -->
+            <div class="feature-box">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast Turnaround</h3>
+                <p>Express delivery options available without compromising quality.</p>
             </div>
             
-            <!-- Box 3 -->
-            <div style="flex: 1 1 300px; max-width: 350px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                <i class="fas fa-cog" style="font-size: 2.5em; color: #4CAF50; margin-bottom: 15px;"></i>
-                <h3 style="font-size: 1.5em;">Custom Solutions</h3>
-                <p>Tailored for YouTube, ads, weddings, and more.</p>
+            <!-- Feature Box 3 -->
+            <div class="feature-box">
+                <i class="fas fa-cog"></i>
+                <h3>Custom Solutions</h3>
+                <p>Tailored editing for YouTube, TikTok, commercials, and special events.</p>
             </div>
             
-            <!-- Box 4 -->
-            <div style="flex: 1 1 300px; max-width: 350px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                <i class="fas fa-tag" style="font-size: 2.5em; color: #4CAF50; margin-bottom: 15px;"></i>
-                <h3 style="font-size: 1.5em;">Affordable Pricing</h3>
-                <p>Premium edits at competitive rates.</p>
+            <!-- Feature Box 4 -->
+            <div class="feature-box">
+                <i class="fas fa-tag"></i>
+                <h3>Affordable Pricing</h3>
+                <p>Premium quality at competitive rates with flexible packages.</p>
             </div>
             
-            <!-- Box 5 -->
-            <div style="flex: 1 1 300px; max-width: 350px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                <i class="fas fa-sync" style="font-size: 2.5em; color: #4CAF50; margin-bottom: 15px;"></i>
-                <h3 style="font-size: 1.5em;">Unlimited Revisions</h3>
-                <p>We refine until you're thrilled.</p>
+            <!-- Feature Box 5 -->
+            <div class="feature-box">
+                <i class="fas fa-sync-alt"></i>
+                <h3>Unlimited Revisions</h3>
+                <p>We keep refining until you're completely satisfied.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+</body>
+</html>
 
 <style>
     /* Style matching your existing theme */
